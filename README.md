@@ -22,12 +22,17 @@ On every startup the bot get the last update
   
   `docker run --name backtest -v /config/pewi:/etc/pewi -it pewi backtest.py`
   
-  ### IF RUNS FINE , U CAN START AS DAEMON WITH
+  ### If runs fine, u can start with daemon
   
   `docker run -d --name bot -v /config/pewi:/etc/pewi -it pewi bot06.py`
 
 ## FAQ
   Something goes wrong
   just backup your conf files lrbot.secrets.js and lrbot06.json 
-  and delete your docker container - docker rm bot
+  and delete your docker container - `docker rm bot`
+  
+  Debug your daemon machine with
+  `docker logs <container> -f --tail 200`
+  
+  
   
