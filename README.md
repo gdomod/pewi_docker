@@ -4,10 +4,14 @@
 On every startup the bot get the last update
 
 ## REQUIREMENTS
-INSTALL docker on running host
-for ubuntu 
+### INSTALL docker on running host
+ 
   apt-get install docker.io
 
+### create your config dir
+
+  mkdir -p /config/pewi
+  
 ## START THE ENGINE
   ### FOR CONSOLE OUTPUT
   For Bot u can use
