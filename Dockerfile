@@ -8,8 +8,10 @@ RUN git clone https://github.com/gdomod/pewi.git .
 
 RUN pip3 install numpy ccxt python-telegram-bot
 
+
 ADD run.sh /tmp
 RUN chmod +x /tmp/run.sh
+RUN mkdir /etc/pewi
 
 ENTRYPOINT ["/tmp/run.sh"]
 
